@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 // When the page is loaded replace the slogan by "Bazinga!"
 
 // When you click on the input to write my name the previous name is deleted
@@ -27,9 +29,9 @@
 
 // When you select a part of the input name the selected part is shown in the result div
 
-/**
- * Final round
- */
+    /**
+     * Final round
+     */
 // Duplicate the jQuery projects when clicks over them
 // When you uncheck "I love learning" you get an alert with "Really???"
 
@@ -37,3 +39,5 @@
 
 // I want the result div follows my mouse until I click (then will be fixed on the page)
 // The mouse should be in the center of the div
+
+});

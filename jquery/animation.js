@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 // Hide the result div
 
 // Hide the result div using fade with 1s duration
@@ -17,3 +19,5 @@
 // Move to the left in 10seconds the result div with linear animation
 
 // Create your own function of easing and use it
+
+});

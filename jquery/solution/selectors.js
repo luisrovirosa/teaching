@@ -1,11 +1,14 @@
-/**
- * Selectors
- */
+$(document).ready(function () {
+
+
+    /**
+     * Selectors
+     */
 
 // Put a border in the following elements
 
 // all the elements: Example
-$("*").css("border", "solid 1px");
+//    $("*").css("border", "solid 1px");
 
 // the div with the id of myContent
 // $("#myContent").css("border", "solid 1px");
@@ -63,3 +66,5 @@ $("*").css("border", "solid 1px");
 //$("li").filter(function(){
 //	return $(this).text().substring(0,6) == 'jQuery';
 //}).css("border", "solid 1px");
+
+});

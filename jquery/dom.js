@@ -1,8 +1,10 @@
+$(document).ready(function () {
+
 // Change the width of the h1 element
 
-// Increase the font-size of all emements to 120%
+// Increase the font-size of all elements to 120%
 
-// Add the hightlighted class to the elements that has the 'new' class
+// Add the highlighted class to the elements that has the 'new' class
 
 // Remove the title class from h1
 
@@ -39,12 +41,14 @@
 // Remove the result div
 
 
-/**
- *  Final round
- */
+    /**
+     *  Final round
+     */
 
 // Set the font color of the color names according to their color
-// Example: The red shoule be in red...
+// Example: The red text should be in red, the blue text should be in blue...
 
 
 // Add links to the li elements, the url is the name ended with .com
+
+});

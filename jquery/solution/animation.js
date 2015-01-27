@@ -1,6 +1,8 @@
-var r = $("#result");
+$(document).ready(function () {
 
-$.fx.speeds["_default"] = 1000;
+    var r = $("#result");
+
+    $.fx.speeds["_default"] = 1000;
 // // Hide the result div
 // $("#result").hide();
 
@@ -43,3 +45,4 @@ $.fx.speeds["_default"] = 1000;
 //r.animate({
 //    left: "0px",
 //}, 10000, 'pow');
+});

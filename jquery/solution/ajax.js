@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 //var r = $("#result");
 
 // Replace myContent content with the result of the request google.html
@@ -69,3 +71,4 @@
 //    replaceName(r)
 //};
 
+});

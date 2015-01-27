@@ -1,6 +1,4 @@
-/**
- * Event Handling
- */
+$(document).ready(function () {
 
 // When the page is loaded replace the slogan by "Bazinga!"
 // $(function(){
@@ -87,9 +85,9 @@
 //	$("#result").text(selectedText);
 // });
 
-/**
- * Final round
- */
+    /**
+     * Final round
+     */
 // Duplicate the jQuery projects when clicks over them
 // $("#myContent").delegate("li", "click", function(e){
 //	var t = e.target;
@@ -121,3 +119,5 @@
 //		left: e.pageX - r.outerWidth() / 2
 //	});
 // });
+
+});

@@ -2,7 +2,7 @@
  *
  */
 
-// In each exercice we will print in the console the result.
+// In each exercise we will print in the console the result.
 
 var sites = ["Google", "Yahoo", "Facebook", "Microsoft", "Apple"];
 

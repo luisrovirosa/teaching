@@ -1,6 +1,8 @@
+$(document).ready(function () {
+
 // Change the width of the h1 element
 // $("h1").width("300px");
-$("h1").css("width", "300px");
+//    $("h1").css("width", "300px");
 
 // Increase the font-size of all emements to 120%
 // $("p").css('font-size', '120%');
@@ -62,9 +64,9 @@ $("h1").css("width", "300px");
 // $("#result").remove();
 
 
-/**
- *  Final round
- */
+    /**
+     *  Final round
+     */
 
 // Set the font color of the color names according to their color
 // Example: The red shoule be in red...
@@ -77,7 +79,10 @@ $("h1").css("width", "300px");
 
 
 // Add links to the li elements, the url is the name ended with .com
-$("li").html(function () {
-    var currentText = $(this).text();
-    return "<a href='http://" + currentText + ".com'>" + currentText + "</a>";
+    $("li").html(function () {
+        var currentText = $(this).text();
+        return "<a href='http://" + currentText + ".com'>" + currentText + "</a>";
+    });
+
+
 });

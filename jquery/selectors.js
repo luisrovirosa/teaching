@@ -1,7 +1,10 @@
+$(document).ready(function () {
+
 // Put a border in the following elements
 
 // all the elements: Example
-$("*").css("border", "solid 1px");
+    var liElements = $("li");
+//    $("*").css("border", "solid 1px");
 
 // the div with the id of myContent
 
@@ -40,3 +43,5 @@ $("*").css("border", "solid 1px");
 // The p elements not inside myContent div
 
 // The li elements that starts with jQuery. Tip: http://www.w3schools.com/jsref/jsref_substring.asp
+
+});
