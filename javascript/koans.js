@@ -2,10 +2,10 @@
 
 // To run the tests inside the browser, please run run_koans.html
 
-// To run the tests with node and jasmine run in the console:
-// jasmine-node --matchAll-autoTest .
+// To run the tests with node and jasmine
 // Uncomment the following line
 // enableTestingWithNode();
+// and run in the console: "jasmine-node --matchAll --autoTest koans.js"
 
 context = describe;
 
@@ -483,9 +483,14 @@ describe("the JavaScript language", function () {
         });
 
         it("can have have methods in the prototype", function () {
+            // http://www.w3schools.com/js/js_object_prototypes.asp
+            // Prototype adds behaviour to the class (and to the old and new instances)
+
             function Obj() {
-                var name = 'bob';
+                this.name = 'bob';
             }
+
+            var oldObject = new Obj();
 
             Obj.prototype.theName = function () {
                 return this.name;
@@ -494,24 +499,7 @@ describe("the JavaScript language", function () {
             var obj = new Obj();
             //expect(obj.theName()).toEqual();
             //expect(obj.theName).toBe(new Obj().theName);
-        });
-
-        it("can define a factory", function () {
-            function obj() {
-                var self = {};
-
-                var name = 'bob';
-                self.theName = function () {
-                    return name;
-                };
-
-                return self;
-            }
-
-            var instance = obj();
-            //expect(instance.theName()).toBe();
-
-            //expect(instance.theName).not.toBe(obj().theName);
+            //expect(oldObject.theName()).toEqual();
         });
 
         it("can create methods dynamically on an object instance", function () {

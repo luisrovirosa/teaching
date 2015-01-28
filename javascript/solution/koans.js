@@ -1,10 +1,17 @@
+// Thanks to Carlos Ble for this file. https://bitbucket.org/carlosble/javascript4testers
+
+// To run the tests inside the browser, please run run_koans.html
+
+// To run the tests with node and jasmine
+// Uncomment the following line
+// enableTestingWithNode();
+// and run in the console: "jasmine-node --matchAll --autoTest koans.js"
+
 context = describe;
 
 function enableTestingWithNode() {
     window = global;
 };
-
-enableTestingWithNode();
 
 describe("the JavaScript language", function () {
 
@@ -30,12 +37,6 @@ describe("the JavaScript language", function () {
         it("knows the type of the variable", function () {
             var x = 1;
             expect(typeof(x)).toEqual('number');
-        });
-
-        it("surprises me, NaN is not comparable with NaN", function () {
-            expect(5 / "a").toEqual(5 / "a");
-            //expect(typeof(NaN)).toEqual('number');
-            expect(isNaN(5 / "a")).toBeTruthy();
         });
 
         it("considers an empty string to be falsy", function () {
@@ -513,9 +514,14 @@ describe("the JavaScript language", function () {
         });
 
         it("can have have methods in the prototype", function () {
+            // http://www.w3schools.com/js/js_object_prototypes.asp
+            // Prototype adds behaviour to the class (and to the old and new instances)
+
             function Obj() {
                 this.name = 'bob';
             }
+
+            var oldObject = new Obj();
 
             Obj.prototype.theName = function () {
                 return this.name;
@@ -524,23 +530,7 @@ describe("the JavaScript language", function () {
             var obj = new Obj();
             expect(obj.theName()).toEqual('bob');
             expect(obj.theName).toBe(new Obj().theName);
-        });
-
-        it("can define a factory", function () {
-            function obj() {
-                var self = {};
-
-                var name = 'bob';
-                self.theName = function () {
-                    return name;
-                };
-
-                return self;
-            }
-
-            var instance = obj();
-            expect(instance.theName()).toBe('bob');
-            expect(instance.theName).not.toBe(obj().theName);
+            expect(oldObject.theName()).toEqual('bob');
         });
 
         it("can create methods dynamically on an object instance", function () {
