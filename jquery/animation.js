@@ -14,10 +14,6 @@ $(document).ready(function () {
 
 // Slide jquery projects and when it's done show on the result div that it's done
 
-// Move the result div to the bottom left corner
-
-// Move to the left in 10seconds the result div with linear animation
-
-// Create your own function of easing and use it
+// Move to the left in 10 seconds the result div with linear animation
 
 });

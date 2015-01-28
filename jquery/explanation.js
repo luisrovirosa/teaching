@@ -1,8 +1,3 @@
-function eat(food) {
-    console.log('Eating some ' + food);
-}
-
-console.log(eat);
 ////////////////////////
 // Events
 ////////////////////////

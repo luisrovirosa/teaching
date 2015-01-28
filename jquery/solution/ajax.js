@@ -5,7 +5,7 @@ $(document).ready(function () {
 // Replace myContent content with the result of the request google.html
 //$("#myContent").load('/google.html');
 
-// Replace the result div when click on it with the response of submiting the content of input text "name" to the /hello/
+// Replace the result div when click on it with the response of submitting the content of input text "name" to the /hello/
 // Example: If the content is "Luis" you should call '/hello/Luis'
 //$("#result").click(function () {
 //    $.get('/hello/' + $("#name").val(), replaceName);
