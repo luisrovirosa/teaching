@@ -194,11 +194,11 @@ describe("the JavaScript language", function () {
                 return exampleB(1);
             };
 
-            //expect(exampleA()).toEqual(undefined);
 
             var exampleB = function (arg1) {
                 return arg1;
             };
+            //expect(exampleA()).toEqual(undefined);
         });
 
         it("can use optional parameters", function () {
@@ -462,16 +462,16 @@ describe("the JavaScript language", function () {
 
         it("may create objects also with the module pattern", function () {
             function createObject(initialScore, initialColor) {
-                self = this;
-                this.score = initialScore;
+                var score = initialScore;
                 return {
                     color: initialColor,
                     incrementScoreIn: function (increment) {
-                        self.score += increment;
+                        score += increment;
                     },
                     points: function () {
-                        return self.score;
-                    }
+                        return score;
+                    },
+                    myScore: score
                 };
             }
 
@@ -480,6 +480,7 @@ describe("the JavaScript language", function () {
             obj.incrementScoreIn(5);
             expect(obj.color).toEqual('red');
             expect(obj.points()).toEqual(10);
+            expect(obj.myScore).toEqual(10);
 
         });
 

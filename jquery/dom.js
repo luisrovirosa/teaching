@@ -2,6 +2,7 @@ $(document).ready(function () {
 
 // Change the width of the h1 element
 
+
 // Increase the font-size of all elements to 120%
 
 // Add the highlighted class to the elements that has the 'new' class

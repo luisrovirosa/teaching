@@ -1,5 +1,7 @@
 # Server functions available
 
+The app is deployed in https://vast-earth-2490.herokuapp.com/
+
 ## Check new email
 Description: Returns an array with 0 or more emails.
 Method: GET /email/new

@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    var SERVER = 'https://calm-dawn-7104.herokuapp.com';
+
 //var r = $("#result");
 
 // Replace myContent content with the result of the request google.html

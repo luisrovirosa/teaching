@@ -4,10 +4,10 @@ $(document).ready(function () {
 
 // all the elements: Example
     var liElements = $("li");
-//    $("*").css("border", "solid 1px");
+    //$("*").css("border", "solid 1px");
 
 // the div with the id of myContent
-
+    $("#myContent").css("border", "solid 1px");
 
 // li elements
 

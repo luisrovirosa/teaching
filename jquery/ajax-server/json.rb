@@ -9,7 +9,7 @@ get '/' do
 end
 
 get '/hello/:name' do
-	"Hello #{params[:name]}!"
+	"Hello #{params[:name]}! This is a server response"
 end
 
 get '/exchange/*' do
